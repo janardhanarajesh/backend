@@ -2,13 +2,13 @@ import express  from "express"
 import mongoose from "mongoose"
 import bodyParser from "body-parser"
 import cors from "cors"
-import formo from "./models/studentdata"
+import formo from "./models/studentdata.js"
 import multer from "multer"
-import leavedat from "./models/leavedata"
+import leavedat from "./models/leavedata.js"
 import nodemailer from 'nodemailer'
-import facualtylog from "./models/fac"
-import notice from "./models/notes"
-import fac from "./models/fac"
+import facualtylog from "./models/fac.js"
+import notice from "./models/notes.js"
+import fac from "./models/fac.js"
 const app=express()
 app.use(cors())
 app.use(bodyParser.json())
